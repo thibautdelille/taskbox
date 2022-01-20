@@ -34,7 +34,7 @@ $: isChecked = task.state === 'TASK_ARCHIVED';
    <span class="checkbox-custom" on:click={ArchiveTask} aria-label={`archiveTask-${task.id}`}/>
  </label>
  <div class="title">
-   <input type="text" readonly value={task.title} placeholder="Input title" />
+   <input type="text" readonly value={task.title} placeholder="Input title" style="background: red;"/>
  </div>
  <div class="actions">
    {#if task.state !== 'TASK_ARCHIVED'}
